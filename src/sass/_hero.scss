@@ -1,0 +1,48 @@
+.order {
+    text-align: center;
+    color: var(--white-color);
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 118px 0;
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+    @include device(retina) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    }
+
+    @include device(tablet) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+        @include device(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        }
+    }
+
+    @include device(desctop) {
+        padding: 200px 0;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+        @include device(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+        }
+    }
+
+    &__title {
+        max-width: 360px;
+        margin: 0 auto;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        @include device(desctop) {
+            max-width: 696px;
+            font-size: 44px;
+        }
+    }
+}
